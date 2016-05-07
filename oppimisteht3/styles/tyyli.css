@@ -19,12 +19,27 @@ body {
     background-size:cover;
     width:100%;
 }
-#kuvat {
-    padding-right:5px;
+.kuvat {
+    padding:10px;
+    border-radius:50px;
 }
 h1, h3 {
     text-align: center;
 }
 footer {
     background-color:black;
+}
+.menuKuva {
+    max-height:300px;
+}
+.container {
+    margin:auto;
+    width:80%
+}
+.varaus-kuva {
+    padding:10px;
+    margin-left:10%;
+ }
+td, th {
+    border-bottom: solid 2px;
 }

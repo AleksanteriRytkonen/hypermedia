@@ -17,6 +17,11 @@
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <!-- linkki jquery mobilen kirjastoon -->
     <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <link rel="stylesheet" href="http://cdn.rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.css">
+
+    <script src="http://cdn.rawgit.com/jquery/jquery-ui/1.10.4/ui/jquery.ui.datepicker.js"></script>
+
+    <script src="http://cdn.rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.js"></script>
 
 </head>
 
@@ -170,53 +175,75 @@ on suora ja nopea yhteys niin keskustaan kuin lentokentällekin.</pre>
   <div>
     <h1>A la carte</h1>
   
-    <div>
+    <div data-role="navbar">
       <ul>
-        <li> <a href="">Etusivu</a></li>
-        <li><a href="">Kahvila</a></li>
-        <li><a href="">Varaus</a></li>
-        <li><a href="">Yhteystiedot</a></li>
+        <li> <a href="#etusivu">Etusivu</a></li>
+        <li><a href="#kahvila">Kahvila</a></li>
+        <li><a href="#varaus">Varaus</a></li>
+        <li><a href="#yhteystiedot">Yhteystiedot</a></li>
       </ul>
     </div>
   </div>
- 	
- <div>
-       <div>
-        <h3>Salaatit</h3>
-        <p>Ceasarsalaatti 7,90 €</p>
-        <p>Ceasarsalaatti kanalla 11,90 €</p>
-        <p>Ceasarsalaatti katakaravuilla 12,50 €</p>
-      </div>
-      <div>
+    <div data-role="main" class="ui-content">
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+           <div data-role="collapsible">
+                    <h3>Salaatit</h3>
+               <div class="ui-grid-a ui-responsive">
+                   <div class="ui-block-a">
+                    <p>Ceasarsalaatti 7,90 €</p>
+                    <p>Ceasarsalaatti kanalla 11,90 €</p>
+                    <p>Ceasarsalaatti katakaravuilla 12,50 €</p>
+                   </div>
+                   <div class="ui-block-b">
+                    <img src="kuvat/annos.jpg" class="menuKuva">
+                   </div>
+               </div>
+           </div>
+
+      <div data-role="collapsible">
         <h3>Keitot</h3>
+          <div class="ui-grid-a ui-responsive">
+              <div class="ui-block-a">
         <p>Talon tomaattikeitto 5,50 €</p>
         <p>Maa-artisokkakeitto 6,50 €</p>
         <p>Sipulikeitto 6,20 €</p>
         <p>Kermainen tattikeitto 7,50 €</p>
         <p>Rapukeitto 7,90 €</p>
+              </div>
+              <div class="ui-block-b">
+          <img src="kuvat/keitto.jpg" class="menuKuva">
+                  </div>
+          </div>
       </div>
-      <div>
+      <div data-role="collapsible">
         <h3>Pasta</h3>
+          <div class="ui-grid-a ui-responsive">
+              <div class="ui-block-a">
         <p>Pasta Carbonara 13,50 €</p>
         <p>Penne Prosciutto 12,90 €</p>
         <p>Chicken Pasticcio 12,50 €</p>
         <p>Baked Canneloni 12,90 €</p>
-
+              </div>
+              <div class="ui-block-b">
+                  <img src="kuvat/annos.jpg" class="menuKuva">
+              </div>
+          </div>
       </div>
-      <div>
+      <div data-role="collapsible">
         <h3>Pizza</h3>
         <p>Tutti di Mare 11,90 €</p>
         <p>Opera 11,90 €</p>
         <p>Imperiale 12,90 €</p>
       </div>
-      <div>
+      <div data-role="collapsible">
         <h3>Grilliruoka</h3>
         <p>Härän sisäfileetä ja perunagratiinia 21,90 €</p>
         <p> Entrecôte ja valkosipuliperunoita 23,50 €</p>
         <p>Grillattua  kanan rintaa ja ranskalaisia 18,50 €</p>
         <p>Grillattua lohta ja lohkoperunoita 19,90 €</p>
       </div>
-      <div>
+      <div data-role="collapsible">
         <h3>Kakut ja piiraat</h3>
         <p>Piparkakkumousse 6,90 €</p>
         <p>Crème Brûlée  7,20 €</p>
@@ -225,15 +252,24 @@ on suora ja nopea yhteys niin keskustaan kuin lentokentällekin.</pre>
         <p>Mustikkajuustokakku 7,50 €</p>
         <p>Kirsikkapiiras 8,50 €</p>
       </div>
-      <div>
+      <div data-role="collapsible">
         <h3>Jäätelöt</h3>
         <p>Vaniljajäätelö suklaakastikkeella 4,60 €</p>
         <p>Pistaasijäätelö vadelmakastikeella 5,80 €</p>
-        
       </div>
-      
     </div>
-      
+            <div class="ui-block-b"><img src="kuvat/jade1.jpg" class="kuvat"></div>
+
+
+     </div>
+
+
+
+
+    </div>
+
+
+
  
     <div>
     <h1>Ratapihantie 13, 00520 Helsinki</h1>
@@ -249,19 +285,20 @@ on suora ja nopea yhteys niin keskustaan kuin lentokentällekin.</pre>
   <div>
     <h1>Pöytävaraus</h1>
    
-    <div>
+    <div data-role="navbar">
       <ul>
-        <li> <a href="" >Etusivu</a></li>
-        <li><a href="" >Kahvila</a></li>
-        <li><a href="" >Menu</a></li>
-        <li><a href="" >Yhteystiedot</a></li>
+        <li> <a href="#etusivu" >Etusivu</a></li>
+        <li><a href="#kahvila" >Kahvila</a></li>
+        <li><a href="#varaus" >Menu</a></li>
+        <li><a href="#yhteystiedot" >Yhteystiedot</a></li>
       </ul>
     </div>
   </div>
   
 
 <div>
- 
+ <div class="ui-grid-a ui-responsive container">
+     <div class="ui-block-a">
 <p>
 Pöytävaraus on helppo tehdä lomakkeella. 
 Varaus on voimassa vasta kun saat varausvahvistuksen sähköpostiisi.
@@ -271,7 +308,7 @@ Yli 10 hengen seurueille pöytävaraukset suoraan hovimestarilta p. 044-440 440.
 <fieldset>
 <div>
 <label for="paiva">Varauspäivä: </label>
-<input type="text" id="paiva" name="paiva">
+<input type="text" id="paiva" name="paiva" data-role="date" required>
 </div>
 <div>
 Kello:   
@@ -303,25 +340,22 @@ Henkilöiden lukumäärä:
 <option>10</option>
 </select>
 </div>
-
 <div>
  <label for="etunimi">Etunimi:</label>
- <input  type="text" id="etunimi" name="etunimi" title="Kirjoita etunimesi" data-clear-btn="true">
+ <input  type="text" id="etunimi" name="etunimi" title="Kirjoita etunimesi" data-clear-btn="true" required>
 </div>
 <div>
  <label for="sukunimi">Sukunimi:</label>
- <input  type="text" id="sukunimi" name="sukunimi" title="Kirjoita sukunimesi" data-clear-btn="true">
+ <input  type="text" id="sukunimi" name="sukunimi" title="Kirjoita sukunimesi" data-clear-btn="true" required>
 </div>
 <div>
  <label for="email">Sähköposti:</label>
- <input  type="text" id="email" name="email" title="Kirjoita sähköpostiosoitteesi" data-clear-btn="true">
+ <input  type="email" id="email" name="email" title="Kirjoita sähköpostiosoitteesi" data-clear-btn="true" required>
 </div>
 <div>
  <label for="puhelin">Puhelin</label>
- <input  type="text" id="puhelin" name="puhelin" title="Kirjoita puhelinnumerosi" data-clear-btn="true">
+ <input  type="tel" id="puhelin" name="puhelin" title="Kirjoita puhelinnumerosi" data-clear-btn="true" required>
 </div>
-
-   
 <div>
 <label for="viesti">Erikoistoivomuksia:</label>
 <textarea id="viesti" name="viesti" title="Kerro vielä varaukseesi liittyviä asioita" rows="3" cols="30" ></textarea>
@@ -331,7 +365,12 @@ Henkilöiden lukumäärä:
 
 </form>
 </div>
- 
+     <div class="ui-block-b">
+         <img src="kuvat/jade2.jpg" class="varaus-kuva">
+     </div>
+ </div>
+
+</div>
  
 
   <div>
@@ -349,12 +388,12 @@ Henkilöiden lukumäärä:
   <div>
     <h1>Yhteystiedot</h1>
    
-    <div>
+    <div data-role="navbar">
       <ul>
-        <li> <a href="" >Etusivu</a></li>
-        <li><a href="" >Kahvila</a></li>
-        <li><a href="" >Menu</a></li>
-        <li><a href="" >Varaus</a></li>
+        <li> <a href="#etusivu" >Etusivu</a></li>
+        <li><a href="#kahvila" >Kahvila</a></li>
+        <li><a href="#menu" >Menu</a></li>
+        <li><a href="#varaus" >Varaus</a></li>
       </ul>
     </div>
   </div>
@@ -363,15 +402,15 @@ Henkilöiden lukumäärä:
 
   <div>
     
-    <table>
+    <table data-role="table" data-mode="columntoggle" class="ui-responsive" data-column-btn-text="Valitse näytettävät tiedot" id="myTable">
       <thead>
         <tr>
         
-          <th>Titteli</th>
-          <th>Nimi</th>
-          <th>Puhelin</th>
-          <th>Sähköposti</th>
-          <th>Tervehdys</th>
+          <th data-priority="1">Titteli</th>
+          <th data-priority="2">Nimi</th>
+          <th data-priority="3">Puhelin</th>
+          <th data-priority="4">Sähköposti</th>
+          <th data-priority="5">Tervehdys</th>
          
         </tr>
       </thead>
@@ -413,6 +452,7 @@ Henkilöiden lukumäärä:
 
       </tbody>
     </table>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.7527641036972!2d24.932493067056765!3d60.201374376037855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469209921fdba137%3A0x841c90a2862185af!2sRatapihantie+13%2C+00520+Helsinki!5e0!3m2!1sfi!2sfi!4v1462655628458" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
    </div>
 
@@ -420,6 +460,19 @@ Henkilöiden lukumäärä:
     <h1>Ratapihantie 13, 00520 Helsinki</h1>
   </div>
 </div> 
+<script>
+    $(document).ready(function() {
 
+        var d = new Date();
+        var kk = d.getMonth()+1;
+        var paiva = d.getDate();
+
+        var rimpsu = paiva + '/' + kk + '/' + d.getFullYear();
+
+        $("#paiva").date({
+           minDate: new Date(rimpsu)
+        });
+    });
+</script>
 </body>
 </html>
