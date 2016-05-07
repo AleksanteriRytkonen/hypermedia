@@ -1,0 +1,56 @@
+h1, h2 {
+    font-family: 'Pacifico', cursive;
+}
+#otsikko1, #otsikko2 {
+    background-color: pink;
+    text-decoration:underline;
+    font-size: 20px;
+    text-align: center;
+    padding:5px;
+    border:1px solid;
+}
+#teksti1, #teksti2 {
+    color:#0f0f0f;
+    background-color: #9acfea;
+    border:1px solid;
+    padding:2px;
+    display:none;
+}
+#kuljetuskalustomme img {
+    padding:5px;
+    -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+}
+#vanhempi_kalusto img {
+    padding:5px;
+    -webkit-box-shadow: 10px 10px 81px 2px rgba(0,0,0,0.38);
+    -moz-box-shadow: 10px 10px 81px 2px rgba(0,0,0,0.38);
+    box-shadow: 10px 10px 81px 2px rgba(0,0,0,0.38);
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+#vanhempi_kalusto img:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+#uusimmat_hankintamme img {
+    padding:5px;
+}
+.yhteystieto {
+    border: 1px solid;
+}
+#nappi {
+    margin-bottom: 8px;
+}
+/*
+#palaute {
+    display:none;
+}
+*/

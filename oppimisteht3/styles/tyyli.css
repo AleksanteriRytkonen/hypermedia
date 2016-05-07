@@ -1,0 +1,30 @@
+@font-face {
+    font-family:open_sansbold;
+    src: url('../fontit/web%20fonts/opensans_bold_macroman/OpenSans-Bold-webfont.eot');
+    src: url('../fontit/web%20fonts/opensans_bold_macroman/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fontit/web%20fonts/opensans_bold_macroman/OpenSans-Bold-webfont.woff') format('woff'),
+        url('../fontit/web%20fonts/opensans_bold_macroman/OpenSans-Bold-webfont.ttf') format('truetype'),
+        url('../fontit/web%20fonts/opensans_bold_macroman/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+div[data-role="page"]{
+    background-color:rgba(240,240,240,0.5);
+}
+body {
+    font-family: open_sansbold;
+    background-image:url("../kuvat/tausta.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size:cover;
+    width:100%;
+}
+#kuvat {
+    padding-right:5px;
+}
+h1, h3 {
+    text-align: center;
+}
+footer {
+    background-color:black;
+}
